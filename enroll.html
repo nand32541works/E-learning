@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | E-LearnPro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fas fa-book-reader"></i> E-LearnPro</a>
+        <ul>
+          <li><a href="enroll.html">Enroll Now <i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Courses <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="language.html">Languages</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Instructors <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="instructors.html">All Instructors</a></li>
+                <li><a href="join.html">Become an Instructor</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services and Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="saved.html">Saved <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="enroll-section">
+    <div class="enroll-container">
+      <h1>Enroll in a Course</h1>
+      <p>Fill out your details to start your learning journey with us!</p>
+      <form action="#" method="post" class="enroll-form">
+        <div class="input-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="input-group">
+          <label for="course">Select Course Category:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select a Category --</option>
+            <option value="Programming">Programming</option>
+            <option value="Design">Design</option>
+            <option value="Business">Business</option>
+            <option value="Languages">Languages</option>
+          </select>
+        </div>
+        <div class="course-list-section">
+            <h2>Available Courses</h2>
+            <div id="courseCards" class="course-cards"></div>
+        </div>
+        <div class="input-group">
+          <label for="message">Message (Optional):</label>
+          <textarea id="message" name="message" placeholder="Any special requirements or queries?"></textarea>
+        </div>
+        <button type="submit" class="inline-btn">Submit Application</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fas fa-book-reader" style="color: var(--main-color); margin-right: 1rem;"></i> E-LearnPro
+          </a>
+          <br><br>
+          <p>We deliver high-quality online courses, helping learners worldwide enhance their skills and careers. Join us today!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Courses</h3>
+          <div class="links">
+            <a href="#">Programming</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Business Analytics</a>
+            <a href="#">Digital Marketing</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Falguni Appartment, Barrackpore, Barasat Road<br> Kolkata, India</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const coursesByCategory = {
+        Programming: [
+          { icon: 'fas fa-code', title: 'Web Development', desc: 'Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites.' },
+          { icon: 'fas fa-database', title: 'Database Management', desc: 'Master SQL, MySQL, MongoDB, and relational database systems for backend development.' },
+          { icon: 'fas fa-laptop-code', title: 'Python Programming', desc: 'From beginner to advanced Python — data analysis, web apps, and automation.' },
+          { icon: 'fab fa-java', title: 'Java Development', desc: 'Build enterprise-grade applications, Android apps, and learn OOP principles.' },
+          { icon: 'fab fa-node-js', title: 'Node.js Backend', desc: 'Create scalable, high-performance server-side applications with Node.js and Express.' },
+          { icon: 'fab fa-react', title: 'React.js Frontend', desc: 'Master React.js for building fast, dynamic, and scalable web applications.' },
+          { icon: 'fab fa-angular', title: 'Angular Development', desc: 'Develop modern web apps using Google\'s Angular framework for dynamic interfaces.' },
+          { icon: 'fab fa-vuejs', title: 'Vue.js Essentials', desc: 'Lightweight and powerful frontend development with Vue.js framework.' },
+          { icon: 'fas fa-cloud', title: 'Cloud Computing', desc: 'Learn AWS, Azure, and Google Cloud services for scalable application deployment.' },
+          { icon: 'fas fa-mobile-alt', title: 'Mobile App Development', desc: 'Build cross-platform mobile apps with Flutter, React Native, and Kotlin.' },
+          { icon: 'fas fa-robot', title: 'Artificial Intelligence', desc: 'Dive into AI algorithms, TensorFlow, and machine learning models.' },
+          { icon: 'fas fa-brain', title: 'Machine Learning', desc: 'Master supervised, unsupervised learning, regression models, and clustering.' },
+          { icon: 'fas fa-project-diagram', title: 'Data Structures & Algorithms', desc: 'Sharpen your problem-solving skills with core computer science concepts.' },
+          { icon: 'fas fa-shield-alt', title: 'Cyber Security', desc: 'Protect systems and networks through ethical hacking and penetration testing.' },
+          { icon: 'fas fa-dna', title: 'Data Science', desc: 'Work with data pipelines, analysis, and visualization using Python & R.' },
+          { icon: 'fas fa-chart-line', title: 'Big Data Analytics', desc: 'Handle large-scale data processing with Hadoop, Spark, and cloud data tools.' },
+          { icon: 'fas fa-terminal', title: 'Linux System Administration', desc: 'Manage servers, networking, and cloud-based systems with Linux OS.' },
+          { icon: 'fas fa-cogs', title: 'DevOps Engineering', desc: 'Streamline development & operations with CI/CD, Docker, and Kubernetes.' },
+          { icon: 'fas fa-globe', title: 'PHP & Laravel', desc: 'Develop dynamic web apps and APIs using PHP and Laravel framework.' },
+          { icon: 'fas fa-gamepad', title: 'Game Development', desc: 'Create immersive games with Unity, Unreal Engine, and C# scripting.' },
+          { icon: 'fas fa-microchip', title: 'Embedded Systems', desc: 'Design IoT solutions with microcontrollers, sensors, and embedded C.' },
+          { icon: 'fas fa-network-wired', title: 'Network Programming', desc: 'Build client-server applications and master TCP/IP socket programming.' },
+          { icon: 'fas fa-chart-pie', title: 'Power BI & Tableau', desc: 'Visualize and analyze business data with modern BI tools and dashboards.' },
+          { icon: 'fas fa-user-secret', title: 'Ethical Hacking', desc: 'Explore penetration testing, bug bounty hunting, and exploit development.' }
+        ],
+        Design: [
+          { icon: 'fas fa-pencil-ruler', title: 'Graphic Design', desc: 'Create visual content with Adobe Photoshop, Illustrator, and InDesign.' },
+          { icon: 'fas fa-palette', title: 'UI/UX Design', desc: 'Design modern, user-friendly interfaces with Figma and Adobe XD.' },
+          { icon: 'fas fa-vector-square', title: 'Adobe Illustrator', desc: 'Create professional vector graphics, icons, and branding designs.' },
+          { icon: 'fas fa-photo-video', title: 'Video Editing', desc: 'Edit engaging video content using Premiere Pro and After Effects.' },
+          { icon: 'fas fa-draw-polygon', title: '3D Modeling & Animation', desc: 'Design 3D models and animations with Blender and Autodesk Maya.' },
+          { icon: 'fas fa-ad', title: 'Digital Branding', desc: 'Create brand strategies, logos, and digital media marketing assets.' },
+          { icon: 'fas fa-laptop', title: 'Web Design', desc: 'Design responsive websites and landing pages with clean UI layouts.' },
+          { icon: 'fas fa-gamepad', title: 'Game UI Design', desc: 'Design immersive and interactive user interfaces for games and apps.' },
+          { icon: 'fas fa-lightbulb', title: 'Creative Thinking', desc: 'Master ideation, concept development, and storytelling for creatives.' },
+          { icon: 'fas fa-camera-retro', title: 'Photography Basics', desc: 'Learn composition, lighting, and editing techniques for digital photography.' },
+          { icon: 'fas fa-paint-brush', title: 'Concept Art', desc: 'Bring ideas to life through environment, character, and product concept drawings.' },
+          { icon: 'fas fa-icons', title: 'Icon Design', desc: 'Create scalable, pixel-perfect icons for apps, websites, and user interfaces.' }
+        ],
+        Business: [
+          { icon: 'fas fa-briefcase', title: 'Business Management', desc: 'Learn business strategy, leadership, and operational management essentials.' },
+          { icon: 'fas fa-chart-line', title: 'Digital Marketing', desc: 'Master SEO, social media, Google Ads, and digital campaign strategy.' },
+          { icon: 'fas fa-users', title: 'Human Resource Management', desc: 'Handle recruitment, employee relations, and organizational development.' },
+          { icon: 'fas fa-chart-pie', title: 'Business Analytics', desc: 'Analyze business data using Excel, Power BI, and Tableau dashboards.' },
+          { icon: 'fas fa-handshake', title: 'Entrepreneurship', desc: 'Learn how to start, scale, and manage your own business venture successfully.' },
+          { icon: 'fas fa-comments-dollar', title: 'Finance for Managers', desc: 'Understand financial statements, budgeting, and decision-making analytics.' },
+          { icon: 'fas fa-tasks', title: 'Project Management', desc: 'Master project planning, Agile, Scrum, and risk management techniques.' },
+          { icon: 'fas fa-store', title: 'E-Commerce Business', desc: 'Set up and manage online stores with Shopify, WooCommerce, and digital sales funnels.' },
+          { icon: 'fas fa-bullhorn', title: 'Brand Management', desc: 'Develop strong brand identities, campaigns, and consumer loyalty strategies.' },
+          { icon: 'fas fa-lightbulb', title: 'Business Innovation', desc: 'Learn innovation frameworks, market disruption, and product strategy skills.' },
+          { icon: 'fas fa-coins', title: 'Investment & Wealth Management', desc: 'Understand stocks, mutual funds, crypto, and retirement planning strategies.' },
+          { icon: 'fas fa-headset', title: 'Customer Relationship Management', desc: 'Learn CRM systems, customer engagement, and loyalty program management.' },
+          { icon: 'fas fa-user-tie', title: 'Leadership & Negotiation', desc: 'Master leadership styles, team management, and effective negotiation tactics.' },
+          { icon: 'fas fa-boxes', title: 'Supply Chain Management', desc: 'Plan and manage logistics, procurement, and distribution channels globally.' },
+          { icon: 'fas fa-globe-americas', title: 'International Business', desc: 'Explore global trade, import-export strategy, and cross-border regulations.' },
+          { icon: 'fas fa-pencil-alt', title: 'Content Marketing', desc: 'Create persuasive blogs, video content, and social media storytelling campaigns.' }
+        ],
+        Languages: [
+          { icon: 'fas fa-language', title: 'English Language', desc: 'Improve grammar, vocabulary, and speaking fluency for global communication.' },
+          { icon: 'fas fa-language', title: 'French Language', desc: 'Learn conversational French, grammar essentials, and cultural etiquette.' },
+          { icon: 'fas fa-language', title: 'Spanish Language', desc: 'Master basic to advanced Spanish for travel, business, and everyday use.' },
+          { icon: 'fas fa-language', title: 'German Language', desc: 'Learn German phrases, grammar, and conversation for work or study abroad.' },
+          { icon: 'fas fa-language', title: 'Japanese Language', desc: 'Master Japanese hiragana, katakana, kanji, and everyday speaking skills.' },
+          { icon: 'fas fa-language', title: 'Mandarin Chinese', desc: 'Understand Mandarin tones, characters, and practical conversation skills.' },
+          { icon: 'fas fa-language', title: 'Hindi Language', desc: 'Enhance your Hindi reading, writing, and verbal communication abilities.' },
+          { icon: 'fas fa-language', title: 'Arabic Language', desc: 'Learn basic to advanced Arabic phrases, grammar, and professional conversation.' },
+          { icon: 'fas fa-language', title: 'Korean Language', desc: 'Learn Korean Hangul, pronunciation, daily phrases, and sentence structures.' },
+          { icon: 'fas fa-language', title: 'Russian Language', desc: 'Master Russian alphabets, grammar, and everyday speaking skills.' },
+          { icon: 'fas fa-language', title: 'Italian Language', desc: 'Learn Italian vocabulary, pronunciation, and conversation for travel and work.' },
+          { icon: 'fas fa-language', title: 'Portuguese Language', desc: 'Master Portuguese grammar, phrases, and dialogues for global communication.' }
+        ]
+    };
+    const courseSelect = document.getElementById("course");
+    const courseCardsContainer = document.getElementById("courseCards");
+    courseSelect.addEventListener("change", () => {
+        const selectedCategory = courseSelect.value;
+        courseCardsContainer.innerHTML = "";
+        if (selectedCategory && coursesByCategory[selectedCategory]) {
+        coursesByCategory[selectedCategory].forEach(course => {
+            const card = document.createElement("div");
+            card.classList.add("course-card");
+            card.innerHTML = `
+            <i class="${course.icon}"></i>
+            <h3>${course.title}</h3>
+            <p>${course.desc}</p>
+            <a href="#" class="inline-btn">Enroll Now</a>
+            `;
+            courseCardsContainer.appendChild(card);
+        });
+        }
+    });
+  </script>
+</body>
+</html>

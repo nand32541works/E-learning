@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | E-LearnPro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fas fa-book-reader"></i> E-LearnPro</a>
+        <ul>
+          <li><a href="enroll.html">Enroll Now <i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Courses <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="language.html">Languages</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Instructors <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="instructors.html">All Instructors</a></li>
+                <li><a href="join.html">Become an Instructor</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services and Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="saved.html">Saved <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="course-section">
+    <h1>Design Courses</h1>
+    <p class="sub-heading" style="color: var(--white);">Master creative skills in UI/UX, graphics, animation, and digital arts</p>
+    <div class="course-grid">
+      <div class="course-card">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>Graphic Design</h3>
+        <p>Create visual content with Adobe Photoshop, Illustrator, and InDesign.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-palette"></i>
+        <h3>UI/UX Design</h3>
+        <p>Design modern, user-friendly interfaces with Figma and Adobe XD.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-vector-square"></i>
+        <h3>Adobe Illustrator</h3>
+        <p>Create professional vector graphics, icons, and branding designs.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-photo-video"></i>
+        <h3>Video Editing</h3>
+        <p>Edit engaging video content using Premiere Pro and After Effects.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-draw-polygon"></i>
+        <h3>3D Modeling & Animation</h3>
+        <p>Design 3D models and animations with Blender and Autodesk Maya.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-ad"></i>
+        <h3>Digital Branding</h3>
+        <p>Create brand strategies, logos, and digital media marketing assets.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-laptop"></i>
+        <h3>Web Design</h3>
+        <p>Design responsive websites and landing pages with clean UI layouts.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-gamepad"></i>
+        <h3>Game UI Design</h3>
+        <p>Design immersive and interactive user interfaces for games and apps.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Creative Thinking</h3>
+        <p>Master ideation, concept development, and storytelling for creatives.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-camera-retro"></i>
+        <h3>Photography Basics</h3>
+        <p>Learn composition, lighting, and editing techniques for digital photography.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Concept Art</h3>
+        <p>Bring ideas to life through environment, character, and product concept drawings.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+      <div class="course-card">
+        <i class="fas fa-icons"></i>
+        <h3>Icon Design</h3>
+        <p>Create scalable, pixel-perfect icons for apps, websites, and user interfaces.</p>
+        <a href="#" class="inline-btn">View Details</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fas fa-book-reader" style="color: var(--main-color); margin-right: 1rem;"></i> E-LearnPro
+          </a>
+          <br><br>
+          <p>We deliver high-quality online courses, helping learners worldwide enhance their skills and careers. Join us today!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Courses</h3>
+          <div class="links">
+            <a href="#">Programming</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Business Analytics</a>
+            <a href="#">Digital Marketing</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Falguni Appartment, Barrackpore, Barasat Road<br> Kolkata, India</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>

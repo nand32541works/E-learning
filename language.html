@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | E-LearnPro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fas fa-book-reader"></i> E-LearnPro</a>
+        <ul>
+          <li><a href="enroll.html">Enroll Now <i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Courses <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="language.html">Languages</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Instructors <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="instructors.html">All Instructors</a></li>
+                <li><a href="join.html">Become an Instructor</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services and Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="saved.html">Saved <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="course-section">
+    <h1>Language Courses</h1>
+    <p class="sub-heading" style="color: var(--white);">Learn global languages and improve your communication skills</p>
+    <div class="course-grid">
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>English Language</h3>
+            <p>Improve grammar, vocabulary, and speaking fluency for global communication.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>French Language</h3>
+            <p>Learn conversational French, grammar essentials, and cultural etiquette.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Spanish Language</h3>
+            <p>Master basic to advanced Spanish for travel, business, and everyday use.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>German Language</h3>
+            <p>Learn German phrases, grammar, and conversation for work or study abroad.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Japanese Language</h3>
+            <p>Master Japanese hiragana, katakana, kanji, and everyday speaking skills.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Mandarin Chinese</h3>
+            <p>Understand Mandarin tones, characters, and practical conversation skills.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Hindi Language</h3>
+            <p>Enhance your Hindi reading, writing, and verbal communication abilities.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Arabic Language</h3>
+            <p>Learn basic to advanced Arabic phrases, grammar, and professional conversation.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Korean Language</h3>
+            <p>Learn Korean Hangul, pronunciation, daily phrases, and sentence structures.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Russian Language</h3>
+            <p>Master Russian alphabets, grammar, and everyday speaking skills.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Italian Language</h3>
+            <p>Learn Italian vocabulary, pronunciation, and conversation for travel and work.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-language"></i>
+            <h3>Portuguese Language</h3>
+            <p>Master Portuguese grammar, phrases, and dialogues for global communication.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fas fa-book-reader" style="color: var(--main-color); margin-right: 1rem;"></i> E-LearnPro
+          </a>
+          <br><br>
+          <p>We deliver high-quality online courses, helping learners worldwide enhance their skills and careers. Join us today!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Courses</h3>
+          <div class="links">
+            <a href="#">Programming</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Business Analytics</a>
+            <a href="#">Digital Marketing</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Falguni Appartment, Barrackpore, Barasat Road<br> Kolkata, India</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>

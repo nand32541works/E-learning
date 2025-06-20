@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | E-LearnPro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fas fa-book-reader"></i> E-LearnPro</a>
+        <ul>
+          <li><a href="enroll.html">Enroll Now <i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Courses <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="language.html">Languages</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Instructors <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="instructors.html">All Instructors</a></li>
+                <li><a href="join.html">Become an Instructor</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services and Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="saved.html">Saved <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="course-section">
+    <h1>Programming Courses</h1>
+    <p class="sub-heading" style="color: var(--white);">Master the latest languages and frameworks with expert-led courses</p>
+    <div class="course-grid">
+        <div class="course-card">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-database"></i>
+            <h3>Database Management</h3>
+            <p>Master SQL, MySQL, MongoDB, and relational database systems for backend development.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Python Programming</h3>
+            <p>From beginner to advanced Python — data analysis, web apps, and automation.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fab fa-java"></i>
+            <h3>Java Development</h3>
+            <p>Build enterprise-grade applications, Android apps, and learn OOP principles.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fab fa-node-js"></i>
+            <h3>Node.js Backend</h3>
+            <p>Create scalable, high-performance server-side applications with Node.js and Express.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fab fa-react"></i>
+            <h3>React.js Frontend</h3>
+            <p>Master React.js for building fast, dynamic, and scalable web applications.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fab fa-angular"></i>
+            <h3>Angular Development</h3>
+            <p>Develop modern web apps using Google's Angular framework for dynamic interfaces.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fab fa-vuejs"></i>
+            <h3>Vue.js Essentials</h3>
+            <p>Lightweight and powerful frontend development with Vue.js framework.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Computing</h3>
+            <p>Learn AWS, Azure, and Google Cloud services for scalable application deployment.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile App Development</h3>
+            <p>Build cross-platform mobile apps with Flutter, React Native, and Kotlin.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-robot"></i>
+            <h3>Artificial Intelligence</h3>
+            <p>Dive into AI algorithms, TensorFlow, and machine learning models.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-brain"></i>
+            <h3>Machine Learning</h3>
+            <p>Master supervised, unsupervised learning, regression models, and clustering.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Data Structures & Algorithms</h3>
+            <p>Sharpen your problem-solving skills with core computer science concepts.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Cyber Security</h3>
+            <p>Protect systems and networks through ethical hacking and penetration testing.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-dna"></i>
+            <h3>Data Science</h3>
+            <p>Work with data pipelines, analysis, and visualization using Python & R.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Big Data Analytics</h3>
+            <p>Handle large-scale data processing with Hadoop, Spark, and cloud data tools.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-terminal"></i>
+            <h3>Linux System Administration</h3>
+            <p>Manage servers, networking, and cloud-based systems with Linux OS.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-cogs"></i>
+            <h3>DevOps Engineering</h3>
+            <p>Streamline development & operations with CI/CD, Docker, and Kubernetes.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-globe"></i>
+            <h3>PHP & Laravel</h3>
+            <p>Develop dynamic web apps and APIs using PHP and Laravel framework.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-gamepad"></i>
+            <h3>Game Development</h3>
+            <p>Create immersive games with Unity, Unreal Engine, and C# scripting.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-microchip"></i>
+            <h3>Embedded Systems</h3>
+            <p>Design IoT solutions with microcontrollers, sensors, and embedded C.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-network-wired"></i>
+            <h3>Network Programming</h3>
+            <p>Build client-server applications and master TCP/IP socket programming.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Power BI & Tableau</h3>
+            <p>Visualize and analyze business data with modern BI tools and dashboards.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+        <div class="course-card">
+            <i class="fas fa-user-secret"></i>
+            <h3>Ethical Hacking</h3>
+            <p>Explore penetration testing, bug bounty hunting, and exploit development.</p>
+            <a href="#" class="inline-btn">View Details</a>
+        </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fas fa-book-reader" style="color: var(--main-color); margin-right: 1rem;"></i> E-LearnPro
+          </a>
+          <br><br>
+          <p>We deliver high-quality online courses, helping learners worldwide enhance their skills and careers. Join us today!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Courses</h3>
+          <div class="links">
+            <a href="#">Programming</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Business Analytics</a>
+            <a href="#">Digital Marketing</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Falguni Appartment, Barrackpore, Barasat Road<br> Kolkata, India</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+
+</body>
+</html>
