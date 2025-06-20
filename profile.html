@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | E-LearnPro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fas fa-book-reader"></i> E-LearnPro</a>
+        <ul>
+          <li><a href="enroll.html">Enroll Now <i class="fas fa-paper-plane"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Courses <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="language.html">Languages</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Instructors <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="instructors.html">All Instructors</a></li>
+                <li><a href="join.html">Become an Instructor</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services and Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="saved.html">Saved <i class="far fa-heart"></i></a></li>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+</header>
+<div class="profile-wrapper">
+  <section class="profile-section">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="person.png" alt="User Photo">
+      </div>
+      <h2>Nanda Kishore Jana</h2>
+      <p>Web Developer | Tech Educator</p>
+      <p style="color: var(--main-color); text-align: justify;">
+        "I’m Nanda Kishore Jana, a passionate Web Developer and Tech Educator with a love for creating clean, 
+        user-friendly web experiences and sharing knowledge with aspiring developers. With a strong focus on 
+        front-end technologies and a commitment to continuous learning, I aim to make technology more accessible 
+        and engaging for everyone through interactive tutorials, live sessions, and hands-on projects."
+      </p>
+      <div class="profile-details">
+        <p><i class="fas fa-envelope" style="color: var(--main-color);"></i> nandakishorejana780@gmail.com</p>
+        <p><i class="fas fa-phone" style="color: var(--main-color);"></i> +91 81004 02401</p>
+        <p><i class="fas fa-map-marker-alt" style="color: var(--main-color);"></i> Kolkata, India</p>
+      </div>
+      <div class="profile-buttons">
+        <a href="#mycourses" class="btn">My Courses</a>
+        <a href="#" class="btn">Edit Profile</a>
+        <a href="login.html" class="btn logout-btn">Logout</a>
+      </div>
+    </div>
+    <div id="mycourses" class="my-courses">
+        <h3>My Enrolled Courses</h3>
+        <div class="course-item">
+          <h4>Complete Web Development Bootcamp</h4>
+          <p><strong>Status:</strong> In Progress | <strong>Progress:</strong> 80%</p>
+        </div>
+        <div class="course-item">
+          <h4>Graphic Design Fundamentals</h4>
+          <p><strong>Status:</strong> Completed | <strong>Score:</strong> 96%</p>
+        </div>
+        <div class="course-item">
+          <h4>Python for Data Science</h4>
+          <p><strong>Status:</strong> In Progress | <strong>Progress:</strong> 55%</p>
+        </div>
+        <div class="course-item">
+          <h4>Digital Marketing Essentials</h4>
+          <p><strong>Status:</strong> Completed | <strong>Score:</strong> 92%</p>
+        </div>
+        <div class="course-item">
+          <h4>Japanese Language</h4>
+          <p><strong>Status:</strong> Completed | <strong>Score:</strong> 78%</p>
+        </div>
+        <div class="course-item">
+          <h4>UI/UX Design</h4>
+          <p><strong>Status:</strong> Completed | <strong>Score:</strong> 84%</p>
+        </div>
+      </div>
+      <center>
+        <div class="profile-buttons">
+            <a href="#mycourses" class="btn">View all Courses</a>
+        </div>
+      </center>
+  </section>
+  <section class="data-analysis">
+    <div class="analysis-container">
+      <h2>Learning Dashboard</h2>
+      <div class="summary-cards">
+        <div class="summary-card">
+          <h3>18</h3>
+          <p>Total Enrollments</p>
+        </div>
+        <div class="summary-card">
+          <h3>12</h3>
+          <p>Courses Completed</p>
+        </div>
+        <div class="summary-card">
+          <h3>6</h3>
+          <p>In Progress</p>
+        </div>
+        <div class="summary-card">
+          <h3>4.7/5</h3>
+          <p>Average Rating</p>
+        </div>
+      </div>
+      <div class="analysis-chart">
+        <h3>Course Progress Overview</h3>
+        <canvas id="progressChart"></canvas>
+      </div>
+      <div class="analysis-chart">
+        <h3>Favorite Categories</h3>
+        <canvas id="categoryChart"></canvas>
+        <p style="font-size: 15px; line-height: 1.6; margin-top: 10px; text-align: justify;">
+          This chart displays your preferred learning categories on E-LearnPro. Programming and Design remain your 
+          top picks, while Language courses have shown growing interest recently. Stay curious and keep learning!
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="home.html" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fas fa-book-reader" style="color: var(--main-color); margin-right: 1rem;"></i> E-LearnPro
+          </a>
+          <br><br>
+          <p>We deliver high-quality online courses, helping learners worldwide enhance their skills and careers. Join us today!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Courses</h3>
+          <div class="links">
+            <a href="#">Programming</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Business Analytics</a>
+            <a href="#">Digital Marketing</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Falguni Appartment, Barrackpore, Barasat Road<br> Kolkata, India</p>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-8100402401</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('progressChart').getContext('2d');
+  const progressChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Completed', 'In Progress'],
+      datasets: [{
+        label: 'Courses',
+        data: [12, 6],
+        backgroundColor: ['#00a566', '#ffa500']
+      }]
+    },
+    options: {
+      scales: { y: { beginAtZero: true } }
+    }
+  });
+
+  const catCtx = document.getElementById('categoryChart').getContext('2d');
+  const categoryChart = new Chart(catCtx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Programming', 'Design', 'Business', 'Languages'],
+      datasets: [{
+        data: [8, 5, 3, 2],
+        backgroundColor: ['#00a566', '#ffa500', '#007bff', '#dc3545']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'bottom' }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
